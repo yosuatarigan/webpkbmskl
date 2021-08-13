@@ -6,7 +6,7 @@ import Cardlist from './Riwayatlist';
 const Riwayat = () => {
     const [data, setdata] = React.useState([]);
     React.useEffect(() => {
-        firestore.collection('riwayat')
+        firestore.collection('riwayat').orderBy('tanggal')
             .onSnapshot((snapshot) => {
                 const data = snapshot.docs.map((doc) => ({
                     id: doc.id,

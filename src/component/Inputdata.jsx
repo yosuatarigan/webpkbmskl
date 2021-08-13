@@ -90,7 +90,7 @@ const Inputdata = () => {
                         </div>
                         <div class="mb-6 pt-3 rounded bg-gray-200">
                             <label class="label-input" for="email">NPSN</label>
-                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, npsn: e.target.value })} id="nama" class="input-field" />
+                            <input type="text" onChange={(e) => setdatadaftar({ ...datadaftar, npsn: e.target.value })} id="nama" class="input-field" />
                         </div>
                         <div class="md:flex mb-6">
                             <div class="md:w-1/3">

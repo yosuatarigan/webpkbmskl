@@ -78,6 +78,8 @@ export const adddata = (collection, data) => {
   // });
 }
 
+
+
 export const adddatacustomid = (collection, id, data) => {
   firestore.collection(collection).doc(id).set(data);
 }
