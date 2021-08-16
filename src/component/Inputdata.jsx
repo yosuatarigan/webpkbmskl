@@ -113,23 +113,23 @@ const Inputdata = () => {
                                 <div>
                                     <div class="mb-6 pt-3 rounded bg-gray-200">
                                         <label class="label-input" for="email">PKN</label>
-                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pkn: e.target.value } })} id="nama" class="input-field" />
+                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pkn: {nilainya : e.target.value, mp : 'Pendidikan Kewarganegaraan', no: 1} } })} id="nama" class="input-field" />
                                     </div>
                                     <div class="mb-6 pt-3 rounded bg-gray-200">
                                         <label class="label-input" for="email">Bahasa Indonesia</label>
-                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasaindonesia: e.target.value } })} id="nama" class="input-field" />
+                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasaindonesia: {nilainya : e.target.value, mp : 'Bahasa Indonesia', no: 2} } })} id="nama" class="input-field" />
                                     </div>
                                     <div class="mb-6 pt-3 rounded bg-gray-200">
                                         <label class="label-input" for="email">Matematika</label>
-                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, matematika: e.target.value } })} id="nama" class="input-field" />
+                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, matematika: {nilainya : e.target.value, mp : 'Matematika', no: 3} } })} id="nama" class="input-field" />
                                     </div>
                                     <div class="mb-6 pt-3 rounded bg-gray-200">
                                         <label class="label-input" for="email">IPA</label>
-                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ipa: e.target.value } })} id="nama" class="input-field" />
+                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ipa: {nilainya : e.target.value, mp : 'IPA', no: 4} } })} id="nama" class="input-field" />
                                     </div>
                                     <div class="mb-6 pt-3 rounded bg-gray-200">
                                         <label class="label-input" for="email">IPS</label>
-                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ips: e.target.value } })} id="nama" class="input-field" />
+                                        <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ips: {nilainya : e.target.value, mp : 'IPS', no: 5} } })} id="nama" class="input-field" />
                                     </div>
 
                                 </div>
@@ -137,101 +137,126 @@ const Inputdata = () => {
                                     <div>
                                         <div class="mb-6 pt-3 rounded bg-gray-200">
                                             <label class="label-input" for="email">Agama</label>
-                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, agama: e.target.value } })} id="nama" class="input-field" />
+                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, agama: {nilainya : e.target.value, mp : 'Agama', no: 1} } })} id="nama" class="input-field" />
                                         </div>
                                         <div class="mb-6 pt-3 rounded bg-gray-200">
                                             <label class="label-input" for="email">PKN</label>
-                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pkn: e.target.value } })} id="nama" class="input-field" />
+                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pkn: {nilainya : e.target.value, mp : 'Pendidikan Kewarganegaraan', no: 2} } })} id="nama" class="input-field" />
                                         </div>
                                         <div class="mb-6 pt-3 rounded bg-gray-200">
                                             <label class="label-input" for="email">Bahasa Indonesia</label>
-                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasaindonesia: e.target.value } })} id="nama" class="input-field" />
+                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasaindonesia: {nilainya : e.target.value, mp : 'Bahasa Indonesia', no: 3} } })} id="nama" class="input-field" />
                                         </div>
                                         <div class="mb-6 pt-3 rounded bg-gray-200">
                                             <label class="label-input" for="email">Matematika</label>
-                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, matematika: e.target.value } })} id="nama" class="input-field" />
+                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, matematika: {nilainya : e.target.value, mp : 'Matematika', no: 4} } })} id="nama" class="input-field" />
                                         </div>
                                         <div class="mb-6 pt-3 rounded bg-gray-200">
                                             <label class="label-input" for="email">Bahasa inggris</label>
-                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasainggris: e.target.value } })} id="nama" class="input-field" />
+                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasainggris: {nilainya : e.target.value, mp : 'Bahasa Inggris', no: 5} } })} id="nama" class="input-field" />
                                         </div>
                                         <div class="mb-6 pt-3 rounded bg-gray-200">
                                             <label class="label-input" for="email">IPA</label>
-                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ipa: e.target.value } })} id="nama" class="input-field" />
+                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ipa: {nilainya : e.target.value, mp : 'IPA', no: 6} } })} id="nama" class="input-field" />
                                         </div>
                                         <div class="mb-6 pt-3 rounded bg-gray-200">
                                             <label class="label-input" for="email">IPS</label>
-                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ips: e.target.value } })} id="nama" class="input-field" />
+                                            <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ips: {nilainya : e.target.value, mp : 'IPS', no: 7} } })} id="nama" class="input-field" />
                                         </div>
                                     </div>
                                     : datadaftar.paketsekolah === "C-IPS" ?
                                         <div>
                                             <div class="mb-6 pt-3 rounded bg-gray-200">
                                                 <label class="label-input" for="email">Agama</label>
-                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, agama: e.target.value } })} id="nama" class="input-field" />
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, agama: {nilainya : e.target.value, mp : 'Agama', no: 1} } })} id="nama" class="input-field" />
                                             </div>
                                             <div class="mb-6 pt-3 rounded bg-gray-200">
                                                 <label class="label-input" for="email">PKN</label>
-                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pkn: e.target.value } })} id="nama" class="input-field" />
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pkn: {nilainya : e.target.value, mp : 'Pendidikan Kewarganegaraan', no: 2} } })} id="nama" class="input-field" />
                                             </div>
                                             <div class="mb-6 pt-3 rounded bg-gray-200">
                                                 <label class="label-input" for="email">Bahasa Indonesia</label>
-                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasaindonesia: e.target.value } })} id="nama" class="input-field" />
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasaindonesia: {nilainya : e.target.value, mp : 'Bahasa Indonesia', no: 3} } })} id="nama" class="input-field" />
                                             </div>
                                             <div class="mb-6 pt-3 rounded bg-gray-200">
                                                 <label class="label-input" for="email">Bahasa Inggris</label>
-                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasainggris: e.target.value } })} id="nama" class="input-field" />
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasainggris: {nilainya : e.target.value, mp : 'Bahasa Inggris', no: 4} } })} id="nama" class="input-field" />
                                             </div>
                                             <div class="mb-6 pt-3 rounded bg-gray-200">
                                                 <label class="label-input" for="email">Ekonomi</label>
-                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ekonomi: e.target.value } })} id="nama" class="input-field" />
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, ekonomi: {nilainya : e.target.value, mp : 'Ekonomi', no: 5} } })} id="nama" class="input-field" />
                                             </div>
                                             <div class="mb-6 pt-3 rounded bg-gray-200">
                                                 <label class="label-input" for="email">Geografi</label>
-                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, geografi: e.target.value } })} id="nama" class="input-field" />
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, geografi: {nilainya : e.target.value, mp : 'Geografi', no: 6} } })} id="nama" class="input-field" />
                                             </div>
                                             <div class="mb-6 pt-3 rounded bg-gray-200">
                                                 <label class="label-input" for="email">Sosiologi</label>
-                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, sosiologi: e.target.value } })} id="nama" class="input-field" />
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, sosiologi: {nilainya : e.target.value, mp : 'Sosiologi', no: 7} } })} id="nama" class="input-field" />
                                             </div>
                                             <div class="mb-6 pt-3 rounded bg-gray-200">
                                                 <label class="label-input" for="email">Matematika</label>
-                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, matematika: e.target.value } })} id="nama" class="input-field" />
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, matematika: {nilainya : e.target.value, mp : 'Matematika', no: 8} } })} id="nama" class="input-field" />
+                                            </div>
+                                            <div class="mb-6 pt-3 rounded bg-gray-200">
+                                                <label class="label-input" for="email">Seni Budaya</label>
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, senibudaya: {nilainya : e.target.value, mp : 'Seni Budaya', no: 9} } })} id="nama" class="input-field" />
+                                            </div>
+                                            <div class="mb-6 pt-3 rounded bg-gray-200">
+                                                <label class="label-input" for="email">PJOK</label>
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pjok: {nilainya : e.target.value, mp : 'PJOK', no: 10} } })} id="nama" class="input-field" />
+                                            </div>
+                                            <div class="mb-6 pt-3 rounded bg-gray-200">
+                                                <label class="label-input" for="email">Mulok</label>
+                                                <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, mulok: {nilainya : e.target.value, mp : 'Mulok', no: 11} } })} id="nama" class="input-field" />
                                             </div>
                                         </div>
                                         : datadaftar.paketsekolah === "C-IPA" ?
                                             <div>
                                                 <div class="mb-6 pt-3 rounded bg-gray-200">
                                                     <label class="label-input" for="email">Agama</label>
-                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, agama: e.target.value } })} id="nama" class="input-field" />
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, agama: {nilainya : e.target.value, mp : 'Agama', no: 1} } })} id="nama" class="input-field" />
                                                 </div>
                                                 <div class="mb-6 pt-3 rounded bg-gray-200">
                                                     <label class="label-input" for="email">PKN</label>
-                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pkn: e.target.value } })} id="nama" class="input-field" />
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pkn: {nilainya : e.target.value, mp : 'Pendidikan Kewarganegaraan', no: 2} } })} id="nama" class="input-field" />
                                                 </div>
                                                 <div class="mb-6 pt-3 rounded bg-gray-200">
                                                     <label class="label-input" for="email">Bahasa Indonesia</label>
-                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasaindonesia: e.target.value } })} id="nama" class="input-field" />
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasaindonesia: {nilainya : e.target.value, mp : 'Bahasa Indonesia', no: 3} } })} id="nama" class="input-field" />
                                                 </div>
                                                 <div class="mb-6 pt-3 rounded bg-gray-200">
                                                     <label class="label-input" for="email">Bahasa Inggris</label>
-                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasainggris: e.target.value } })} id="nama" class="input-field" />
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, bahasainggris: {nilainya : e.target.value, mp : 'Bahasa Inggris', no: 4} } })} id="nama" class="input-field" />
                                                 </div>
                                                 <div class="mb-6 pt-3 rounded bg-gray-200">
                                                     <label class="label-input" for="email">Biologi</label>
-                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, biologi: e.target.value } })} id="nama" class="input-field" />
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, biologi: {nilainya : e.target.value, mp : 'Biologi', no: 5} } })} id="nama" class="input-field" />
                                                 </div>
                                                 <div class="mb-6 pt-3 rounded bg-gray-200">
                                                     <label class="label-input" for="email">Kimia</label>
-                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, kimia: e.target.value } })} id="nama" class="input-field" />
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, kimia: {nilainya : e.target.value, mp : 'Kimia', no: 6} } })} id="nama" class="input-field" />
                                                 </div>
                                                 <div class="mb-6 pt-3 rounded bg-gray-200">
                                                     <label class="label-input" for="email">Fisika</label>
-                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, fisika: e.target.value } })} id="nama" class="input-field" />
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, fisika: {nilainya : e.target.value, mp : 'Fisika', no: 7} } })} id="nama" class="input-field" />
                                                 </div>
                                                 <div class="mb-6 pt-3 rounded bg-gray-200">
                                                     <label class="label-input" for="email">Matematika</label>
-                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, matematika: e.target.value } })} id="nama" class="input-field" />
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, matematika: {nilainya : e.target.value, mp : 'Matematika', no: 8} } })} id="nama" class="input-field" />
+                                                </div>
+                                                <div class="mb-6 pt-3 rounded bg-gray-200">
+                                                    <label class="label-input" for="email">Seni Budaya</label>
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, senibudaya: {nilainya : e.target.value, mp : 'Seni Budaya', no: 9} } })} id="nama" class="input-field" />
+                                                </div>
+
+                                                <div class="mb-6 pt-3 rounded bg-gray-200">
+                                                    <label class="label-input" for="email">PJOK</label>
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, pjok: {nilainya : e.target.value, mp : 'PJOK', no: 10} } })} id="nama" class="input-field" />
+                                                </div>
+                                                <div class="mb-6 pt-3 rounded bg-gray-200">
+                                                    <label class="label-input" for="email">Mulok</label>
+                                                    <input type="number" onChange={(e) => setdatadaftar({ ...datadaftar, nilai: { ...datadaftar.nilai, mulok: {nilainya : e.target.value, mp : 'Mulok', no: 11} } })} id="nama" class="input-field" />
                                                 </div>
                                             </div>
                                             : null

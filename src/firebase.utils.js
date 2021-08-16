@@ -17,11 +17,11 @@ import 'firebase/storage';
 
 const config = {
   apiKey: "AIzaSyBickfif2rmnNHhjCyKyg2URHofqpszlwY",
-  authDomain: "websklpkbm.firebaseapp.com",
-  projectId: "websklpkbm",
-  storageBucket: "websklpkbm.appspot.com",
-  messagingSenderId: "674237208862",
-  appId: "1:674237208862:web:4b47171daa4f4a2a20510f"
+    authDomain: "websklpkbm.firebaseapp.com",
+    projectId: "websklpkbm",
+    storageBucket: "websklpkbm.appspot.com",
+    messagingSenderId: "674237208862",
+    appId: "1:674237208862:web:4b47171daa4f4a2a20510f"
 };
 
 firebase.initializeApp(config);
