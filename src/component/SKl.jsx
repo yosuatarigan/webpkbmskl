@@ -5,7 +5,7 @@ import { adddata, firestore, updatedatacustomid } from '../firebase.utils';
 import QR from 'qrcode-base64';
 import angkaTerbilang from '@develoka/angka-terbilang-js';
 var hash = require('hash.js');
-const { formatFullDate } = require('node-format-date');
+const { formatFullDate, formatDate } = require('node-format-date');
 const NodeRSA = require('node-rsa');
 const key = new NodeRSA();
 const keydatanya = '-----BEGIN RSA PRIVATE KEY-----MIIBOgIBAAJBAK7538NYbwjZkX+Icfko0GSeDGRf38wAel8dmu2zq2NPbHQ3G3jHb5aaCyOoNjHQvyYZwKu5H/IP2KCsSKMNiV0CAwEAAQJATWGWErbuS9SkIul9tfnVx1maE13PBFIFzEC0foDhv8Xm9T4SuTApfy2V1zdjSDqjXnycLx8fxDbe42nKBERCQQIhAP0gbedK3oScyU6nx5b9zJfIgdSmzvnN2ZDPI0R+wNtNAiEAsPZYB6ju/2Kmlg3mDvewbDdErRIJk7M3umvNYwXZvlECIQDsr0YU34zxsykIwxl9thN4WaQMk201Z6XoIcd4ZI0wgQIgXazJxKREf6Q1EtGgquOq3F4VWJhnwWvpYCGYw4ZhUUECIBy9M75fxhN9kvVN48j8DDa7wsvVZRq7Dbo311p7LU/g-----END RSA PRIVATE KEY-----'
@@ -279,7 +279,7 @@ const SKl = () => {
         // doc.text(x3 - 90, y + yi, `${hashnya}`)
 
 
-        doc.text(x4 + 160, 740, `Medan , ${formatFullDate(tglambil)}`)
+        doc.text(x4 + 140, 750, `Medan , ${formatDate(tglambil)}`)
         doc.text(x4 + 160, 760, 'PKBM Hanuba')
         doc.text(x4 + 160, 820, 'Jontar Sinaga, SE')
 
