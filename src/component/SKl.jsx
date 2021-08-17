@@ -231,55 +231,37 @@ const SKl = () => {
         y = y + yi + 5;
         jumlahnilai = 0;
         var mp;
+        // {
+        //     Object.keys(data.nilai).map((matepelajaran, i) => {
+               
+        //         doc.text(x2 + 40, y, `${no}`)
+
+             
+
+        //         doc.text(x2 + 60, y, data.nilai[matepelajaran].mp)
+        //         doc.text(x4 + 50, y, data.nilai[matepelajaran].nilainya)
+        //         doc.text(x4 + 130, y, `${angkaTerbilang(data.nilai[matepelajaran].nilainya)}`)
+        //         no = no + 1;
+        //         y = y + yi;
+        //         jumlahnilai = parseInt(jumlahnilai) + parseInt(data.nilai[matepelajaran].nilainya)
+
+        //     })
+        // }
+
         {
-            Object.keys(data.nilai).sort().map((matepelajaran, i) => {
-                doc.text(x2 + 40, y, `${no}`)
+            Object.values(data.nilai).sort((a,b)=> a.no - b.no).map((data) => {
+                console.log(data);
+               
+                doc.text(x2 + 40, y, data.no.toString())
 
-                switch (matepelajaran) {
-                    case 'agama':
-                        mp = 'Agama'
-                        break;
-                    case 'bahasaindonesia':
-                        mp = 'Bahasa Indonesia'
-                        break;
-                    case 'bahasainggris':
-                        mp = 'Bahasa Inggris'
-                        break;
-                    case 'ekonomi':
-                        mp = 'Ekonomi'
-                        break;
-                    case 'geografi':
-                        mp = 'Geografi'
-                        break;
-                    case 'matematika':
-                        mp = 'Matematika'
-                        break;
-                    case 'mulok':
-                        mp = 'Mulok'
-                        break;
-                    case 'pjok':
-                        mp = 'PJOK'
-                        break;
-                    case 'pkn':
-                        mp = 'Pendidikan Kewarganegaraan'
-                        break;
-                    case 'senibudaya':
-                        mp = 'Seni Budaya'
-                        break;
-                    case 'sosiologi':
-                        mp = 'Sosiologi'
-                        break;
+             
 
-                    default:
-                    // code block
-                }
-
-                doc.text(x2 + 60, y, mp)
-                doc.text(x4 + 50, y, data.nilai[matepelajaran])
-                doc.text(x4 + 130, y, `${angkaTerbilang(data.nilai[matepelajaran])}`)
+                doc.text(x2 + 60, y, data.mp)
+                doc.text(x4 + 50, y, data.nilainya)
+                doc.text(x4 + 130, y, `${angkaTerbilang(data.nilainya)}`)
                 no = no + 1;
                 y = y + yi;
-                jumlahnilai = parseInt(jumlahnilai) + parseInt(data.nilai[matepelajaran])
+                jumlahnilai = parseInt(jumlahnilai) + parseInt(data.nilainya)
 
             })
         }
