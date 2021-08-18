@@ -1,5 +1,6 @@
 import React from 'react'
 import { adddatacustomid } from '../firebase.utils';
+const { formatFullDate, formatDate } = require('node-format-date');
 
 
 const Inputdata = () => {
@@ -74,7 +75,7 @@ const Inputdata = () => {
                        
                         <div class="mb-6 pt-3 rounded bg-gray-200">
                             <label class="label-input" for="email">Tanggal Lahir</label>
-                            <input type="date" onChange={(e) => setdatadaftar({ ...datadaftar, tanggallahir: e.target.value })} id="nama" class="input-field" />
+                            <input type="date" onChange={(e) => setdatadaftar({ ...datadaftar, tanggallahir: formatDate(e.target.value) })} id="nama" class="input-field" />
                         </div>
                         <div class="mb-6 pt-3 rounded bg-gray-200">
                             <label class="label-input" for="email">Nama Orang Tua</label>

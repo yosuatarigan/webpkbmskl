@@ -165,7 +165,7 @@ const SKl = () => {
         doc.setFont('Times New Roman', 'normal')
 
         doc.text(x2 + 40, y = y + yi, 'Tempat/tanggal lahir')
-        doc.text(x4, y, `   : ${data.tempatlahir}`)
+        doc.text(x4, y, `   : ${data.tempatlahir}, ${data.tanggallahir}`)
 
         doc.text(x2 + 40, y = y + yi, 'Nama Orang Tua')
         doc.text(x4, y, `   : ${data.namaorangtua}`)
