@@ -94,7 +94,7 @@ const Validasi = () => {
 
         doc.setFontSize(11)
         doc.setFont('Times New Roman', 'normal')
-        doc.text(x3 + 20, y = y + yi, `No : ${nonya + 1}/PKBM-Hanuba/UPK-${data.paketsekolah}/${integer_to_roman(currentMonth + 1)}/${currentYear}`)
+        doc.text(x3 + 20, y = y + yi, `No : ${data.nosurat + 1}/PKBM-Hanuba/UPK-${data.paketsekolah}/${integer_to_roman(currentMonth + 1)}/${currentYear}`)
 
         doc.setFontSize(12)
         doc.text(x3 - 90, y = y + yi, 'Yang bertanda tangan dibawah ini, Direktur Pusat Kegiatan Belajar Masyarakat Hati')
@@ -107,7 +107,7 @@ const Validasi = () => {
         doc.setFont('Times New Roman', 'normal')
 
         doc.text(x2 + 40, y = y + yi, 'Tempat/tanggal lahir')
-        doc.text(x4, y, `   : ${data.tempatlahir}`)
+        doc.text(x4, y, `   : ${data.tempatlahir}, ${data.tanggallahir}`)
 
         doc.text(x2 + 40, y = y + yi, 'Nama Orang Tua')
         doc.text(x4, y, `   : ${data.namaorangtua}`)

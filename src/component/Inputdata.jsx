@@ -1,5 +1,5 @@
 import React from 'react'
-import { adddatacustomid } from '../firebase.utils';
+import { adddatacustomid, firestore } from '../firebase.utils';
 const { formatFullDate, formatDate } = require('node-format-date');
 
 
@@ -19,6 +19,15 @@ const Inputdata = () => {
     }
 
     const [datadaftar, setdatadaftar] = React.useState(dataaawal)
+    const [nonya, setnonya] = React.useState();
+
+    React.useEffect(() => {
+        firestore.collection("statenumber").doc(`numbernya`)
+            .onSnapshot((doc) => {
+                setnonya(doc.data().no);
+
+            });
+    })
 
 
     const resetdata = () => {
@@ -38,7 +47,7 @@ const Inputdata = () => {
             datadaftar.nis &&
             datadaftar.nilai &&
             datadaftar.paketsekolah !== "") {
-            adddatacustomid('datawargabelajar', datadaftar.nisn, { ...datadaftar, tgldaftar: tgldaftar })
+            adddatacustomid('datawargabelajar', datadaftar.nisn, { ...datadaftar, tgldaftar: tgldaftar, nosurat : nonya+1 })
             resetdata()
             alert('data sudah ditambah')
             // pdfgenerator()
