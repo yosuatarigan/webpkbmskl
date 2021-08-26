@@ -21,14 +21,20 @@ const Validasi = () => {
 
 
     React.useEffect(() => {
-        const dekrip = keynya.decrypt(hash, 'utf8');
-        firestore.collection('datawargabelajar').where("hash", "==", dekrip)
-            .get()
-            .then((querySnapshot) => {
-                querySnapshot.forEach((doc) => {
-                    setdata({ id: doc.id, ...doc.data() });
-                });
-            })
+        try {
+            const dekrip = keynya.decrypt(hash, 'utf8');
+            firestore.collection('datawargabelajar').where("hash", "==", dekrip)
+                .get()
+                .then((querySnapshot) => {
+                    querySnapshot.forEach((doc) => {
+                        setdata({ id: doc.id, ...doc.data() });
+                    });
+                })
+        }
+        catch {
+            return;
+        }
+       
     }, [hash])
 
     const handleclick = (e) => {
